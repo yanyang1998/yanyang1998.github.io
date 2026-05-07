@@ -133,11 +133,11 @@ The broader goal is **panoramic structural biology**: replacing single-target, p
   </article>
 </div>
 
-## Professional Profiles
+<!-- ## Professional Profiles
 
 <p class="academic-actions">
   <a class="btn" href="https://github.com/yanyang1998">GitHub</a>
   <a class="btn" href="https://scholar.google.com/citations?user=33_VlgwAAAAJ&hl=zh-CN">Google Scholar</a>
   <a class="btn" href="https://orcid.org/0000-0002-3306-3863">ORCID</a>
   <a class="btn" href="https://twitter.com/yangyan511018">X</a>
-</p>
+</p> -->
