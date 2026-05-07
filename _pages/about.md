@@ -1,56 +1,135 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "Yang Yan"
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
+<section class="academic-hero">
+  <p class="academic-kicker">AI for Science | Computer Vision | Representation Learning | Structural Biology</p>
+  <h1>Ph.D. candidate building foundation models for cryo-electron microscopy.</h1>
+  <p class="academic-lede">I develop AI systems and open-source tools that make cryo-EM particle processing, heterogeneity analysis, and structure determination more automated, scalable, and reproducible.</p>
+  <p class="academic-actions">
+    <a class="btn btn--primary" href="/files/cv_yang_yan.pdf">Download CV</a>
+    <a class="btn" href="mailto:y.yan@zju.edu.cn">Email</a>
+    <a class="btn" href="https://github.com/yanyang1998">GitHub</a>
+  </p>
+</section>
 
- You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+## Research Profile
 
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured Markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various Markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+I am a Ph.D. candidate in Computer Science in a joint program at Zhejiang University and Westlake University, supervised by Prof. Fajie Yuan and Prof. Huaizong Shen. My research focuses on foundation models and practical machine-learning systems for single-particle cryo-EM, with an emphasis on representation learning, particle-quality ranking, clustering, and automated reconstruction.
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your Markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the Markdown files! You can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+My recent work introduced **Cryo-IEF**, a foundation model for cryo-EM particle processing pretrained on approximately 65 million particle images and transferred to structural classification, pose-aware clustering, particle-quality ranking, and automated reconstruction. Current work extends this direction through **CryoDECO**, a foundation-prior framework for compositional and conformational heterogeneity.
 
-For those users that need more advanced functionality, the template also supports the following popular tools:
-- [MathJax](https://www.mathjax.org/) for mathematical equations
-- [Mermaid](https://mermaid.js.org/) for diagraming
-- [Plotly](https://plotly.com/javascript/) for plotting
+## Education
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](https://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+<div class="academic-timeline">
+  <article>
+    <span>2023-Present</span>
+    <h3>Ph.D. Candidate in Computer Science</h3>
+    <p>Zhejiang University / Westlake University</p>
+    <p>Joint Ph.D. program supervised by Prof. Fajie Yuan and Prof. Huaizong Shen. Research: foundation models for cryo-EM image processing, automated workflows, and heterogeneity analysis.</p>
+  </article>
+  <article>
+    <span>2020-2023</span>
+    <h3>M.S. in Translational Medicine (Engineering)</h3>
+    <p>Xiamen University</p>
+    <p>National Institute of Diagnostics and Vaccine Development in Infectious Diseases, supervised by Prof. Ningshao Xia. Research: machine learning for medical image analysis.</p>
+  </article>
+  <article>
+    <span>2016-2020</span>
+    <h3>B.S. in Electrical Information Engineering</h3>
+    <p>Northeastern University (Qinhuangdao)</p>
+    <p>Research included machine-learning applications in localization.</p>
+  </article>
+</div>
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+## Selected Publications
 
-Create content & metadata
-------
-For site content, there is one Markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a Markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each Markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+<div class="academic-list">
+  <article>
+    <h3>A comprehensive foundation model for cryo-EM image processing</h3>
+    <p><strong>Yang Yan</strong>, Shiqi Fan, Fajie Yuan, Huaizong Shen. <em>Nature Methods</em>, 23(1), 88-95, 2026. DOI: <a href="https://doi.org/10.1038/s41592-025-02916-8">10.1038/s41592-025-02916-8</a>.</p>
+  </article>
+  <article>
+    <h3>Artificial intelligence foundation model automates cryo-EM structure determination</h3>
+    <p><strong>Yang Yan</strong>, Huaizong Shen. <em>Nature Methods Research Briefing</em>, 23, 26-27, 2026. DOI: <a href="https://doi.org/10.1038/s41592-025-02917-7">10.1038/s41592-025-02917-7</a>.</p>
+  </article>
+  <article>
+    <h3>CryoDECO: Deconstructing Extreme Compositional and Conformational Heterogeneity in Cryo-EM via Foundation Model Priors</h3>
+    <p><strong>Yang Yan</strong>, Yanwanyu Xi, Shiqi Fan, Yifei Wang, Ziyun Tang, Fajie Yuan, Huaizong Shen. LangTaoSha Preprint Server, 2026. DOI: <a href="https://doi.org/10.65215/LTSpreprints.2025.12.30.000075">10.65215/LTSpreprints.2025.12.30.000075</a>.</p>
+  </article>
+</div>
 
-**Markdown generator**
+[View all publications](/publications/){: .btn}
 
-The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual Markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the Markdown files, then commit and push them to the GitHub repository.
+## Research Highlights
 
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and Markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+<div class="academic-card-grid">
+  <article>
+    <h3>Cryo-EM Foundation Models</h3>
+    <p>Introduced Cryo-IEF as a foundation-model paradigm for automated cryo-EM particle analysis.</p>
+  </article>
+  <article>
+    <h3>Automated Reconstruction</h3>
+    <p>Developed CryoWizard, a fully automated computational pipeline for single-particle cryo-EM reconstruction.</p>
+  </article>
+  <article>
+    <h3>Heterogeneous Reconstruction</h3>
+    <p>Developed CryoDECO to combine foundation-model priors with ab initio reconstruction for complex compositional and conformational heterogeneity.</p>
+  </article>
+  <article>
+    <h3>Open Scientific ML Infrastructure</h3>
+    <p>Built cryodata, a reusable PyTorch-ready data layer for CryoSPARC particle outputs, MRC/MRCS preprocessing, LMDB datasets, and metadata conversion.</p>
+  </article>
+</div>
 
-Example: editing a Markdown file for a talk
-![Editing a Markdown file for a talk](/images/editing-talk.png)
+## Featured Software
 
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+<div class="academic-projects">
+  <article>
+    <h3><a href="https://github.com/westlake-repl/Cryo-IEF">Cryo-IEF</a></h3>
+    <p>Foundation model ecosystem for cryo-EM particle processing, including downstream tooling for CryoRanker and CryoClustering.</p>
+  </article>
+  <article>
+    <h3><a href="https://github.com/yanyang1998/CryoDECO">CryoDECO</a></h3>
+    <p>Foundation-prior framework for heterogeneous cryo-EM reconstruction and compositional/conformational deconstruction.</p>
+  </article>
+  <article>
+    <h3><a href="https://github.com/SMART-StructBio-AI/cryoief-data">cryodata</a></h3>
+    <p>Open-source data-processing package that turns CryoSPARC particle jobs into reproducible PyTorch-ready datasets.</p>
+  </article>
+  <article>
+    <h3><a href="https://github.com/SMART-StructBio-AI/CryoWizard">CryoWizard</a></h3>
+    <p>End-to-end automated single-particle cryo-EM reconstruction pipeline integrating particle ranking and CryoSPARC workflows.</p>
+  </article>
+</div>
+
+[View projects](/projects/){: .btn}
+
+## Posters
+
+<div class="academic-card-grid">
+  <article>
+    <h3>Cryo-IEF Poster</h3>
+    <p>Foundation models for cryo-EM particle processing.</p>
+    <p><a href="/files/Cryo_IEF_poster.pdf">Open poster PDF</a></p>
+  </article>
+  <article>
+    <h3>CryoDECO Poster</h3>
+    <p>Foundation-prior reconstruction for extreme cryo-EM heterogeneity.</p>
+    <p><a href="/files/CryoDECO_poster.pdf">Open poster PDF</a></p>
+  </article>
+</div>
+
+## Professional Profiles
+
+<p class="academic-actions">
+  <a class="btn" href="https://github.com/yanyang1998">GitHub</a>
+  <a class="btn" href="https://scholar.google.com/citations?user=33_VlgwAAAAJ&hl=zh-CN">Google Scholar</a>
+  <a class="btn" href="https://orcid.org/0000-0002-3306-3863">ORCID</a>
+  <a class="btn" href="https://twitter.com/yangyan511018">X</a>
+</p>

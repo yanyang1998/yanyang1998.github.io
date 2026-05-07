@@ -1,0 +1,197 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[margin=0.55in]{geometry}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+\else
+  \usepackage{fontspec}
+  \setmainfont{Latin Modern Roman}
+\fi
+\usepackage[dvipsnames]{xcolor}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{needspace}
+
+\ifPDFTeX
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\fi
+
+\definecolor{Accent}{HTML}{0B5CAD}
+\definecolor{Text}{HTML}{172033}
+\definecolor{Muted}{HTML}{5B6472}
+\definecolor{Rule}{HTML}{CBD5E1}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=Accent,
+  linkcolor=Accent,
+  pdfauthor={Yang Yan},
+  pdftitle={Yang Yan CV}
+}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\renewcommand{\arraystretch}{1.08}
+\setlist[itemize]{leftmargin=1.15em, itemsep=1.5pt, topsep=2pt, parsep=0pt, partopsep=0pt}
+
+\titleformat{\section}
+  {\normalsize\bfseries\color{Accent}}
+  {}
+  {0pt}
+  {}
+  [\vspace{-2pt}{\color{Rule}\titlerule}]
+\titlespacing*{\section}{0pt}{7pt}{4pt}
+
+\newcommand{\entry}[4]{%
+  \Needspace{3.2\baselineskip}%
+  \noindent
+  \begin{minipage}[t]{0.14\linewidth}
+    \vspace{0pt}{\small\color{Muted}#1}
+  \end{minipage}\hfill
+  \begin{minipage}[t]{0.83\linewidth}
+    \vspace{0pt}
+    \textbf{#2}\hfill{\small\color{Muted}#3}\\[-1pt]
+    #4
+  \end{minipage}\par\vspace{4pt}
+}
+
+\newcommand{\projectentry}[4]{%
+  \Needspace{4.4\baselineskip}%
+  \noindent
+  \begin{minipage}[t]{0.14\linewidth}
+    \vspace{0pt}{\small\color{Muted}#1}
+  \end{minipage}\hfill
+  \begin{minipage}[t]{0.83\linewidth}
+    \vspace{0pt}\RaggedRight
+    \textbf{#2}\\[-1pt]
+    {\small\href{#3}{#3}}\\[-1pt]
+    #4
+  \end{minipage}\par\vspace{4pt}
+}
+
+\newcommand{\pub}[4]{%
+  \textbf{#1} \hfill {\small\color{Muted}#4}\\[-1pt]
+  #2\\[-1pt]
+  {\small\color{Muted}#3}\vspace{2.5pt}
+}
+
+\newcommand{\skillrow}[2]{%
+  \noindent
+  \begin{minipage}[t]{0.24\linewidth}
+    \vspace{0pt}\textbf{#1}
+  \end{minipage}\hfill
+  \begin{minipage}[t]{0.735\linewidth}
+    \vspace{0pt}#2
+  \end{minipage}\par\vspace{2pt}
+}
+
+\begin{document}
+
+\begin{minipage}[t]{0.78\linewidth}
+  \vspace{0pt}
+  {\Huge\bfseries\color{Text} Yang Yan}\\[5pt]
+  {\large Ph.D. Candidate, Zhejiang University / Westlake University }\\[4pt]
+  AI for Science | Computer Vision | Representation Learning | Structural Biology\\[2pt]
+  \href{mailto:y.yan@zju.edu.cn}{y.yan@zju.edu.cn} \quad
+\href{mailto:yanyang92@westlake.edu.cn}{yanyang92@westlake.edu.cn}\\[2pt]
+  \href{https://github.com/yanyang1998}{github.com/yanyang1998} \quad
+\href{https://scholar.google.com/citations?user=33_VlgwAAAAJ\&hl=zh-CN}{Google Scholar}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.16\linewidth}
+  \vspace{0pt}\raggedleft
+  % \includegraphics[width=0.95in,height=1.14in,keepaspectratio]{figs/profile_photo.png}
+  \includegraphics[width=1.2in,height=1.44in,keepaspectratio]{figs/profile_photo.png}
+\end{minipage}
+\vspace{3pt}
+
+\section*{Research Profile}
+\textbf{AI-for-science Ph.D. candidate} building foundation models and open-source ML systems for cryo-electron microscopy. First author of a \textit{\textbf{Nature Methods}} study introducing \textbf{Cryo-IEF}, the first foundation model for cryo-EM particle processing, pretrained on \textbf{65.3M particle images} and transferred to structural classification, pose-aware clustering, particle-quality ranking, and automated reconstruction. 
+Current work extends this research through \textbf{CryoDECO}, a SOTA foundation-prior ab initio reconstruction framework for compositional and conformational heterogeneity.
+%  and through reusable PyTorch, CryoSPARC, and RELION infrastructure that turns learned particle representations into practical structural-biology workflows. 
+ Longer term, my research aims to build structural world models and agentic reconstruction systems that reason over molecular identity, dynamics, and native cellular context.
+
+\section*{Education}
+\entry{2023--Present}{Ph.D. Candidate in Computer Science}{Zhejiang University / Westlake University}{Joint Ph.D. program supervised by Prof. Fajie Yuan and Prof. Huaizong Shen. Research: foundation models for cryo-EM image processing, automated workflows, and heterogeneity analysis.}
+
+\entry{2020--2023}{M.S. in Translational Medicine (Engineering)}{Xiamen University}{National Institute of Diagnostics and Vaccine Development in Infectious Diseases, supervised by Prof. Ningshao Xia. Research: machine learning for medical image analysis.}
+
+\entry{2016--2020}{B.S. in Electrical Information Engineering}{Northeastern University (Qinhuangdao)}{Research included machine-learning applications in localization.}
+
+
+\section*{Selected Publications}
+\pub{A comprehensive foundation model for cryo-EM image processing}
+{\textbf{Yang Yan}, Shiqi Fan, Fajie Yuan, Huaizong Shen}
+{\textit{Nature Methods}, 23(1), 88--95. DOI: \href{https://doi.org/10.1038/s41592-025-02916-8}{10.1038/s41592-025-02916-8}. Introduced Cryo-IEF as the first cryo-EM particle-processing foundation model and established a foundation-model paradigm for automated particle analysis.}
+{2026}
+
+% \textbf{Artificial intelligence foundation model automates cryo-EM structure determination}
+% Yang Yan, Huaizong Shen.
+% Nature Methods Research Briefing, 23, 26--27, 2026.
+\pub{Artificial intelligence foundation model automates cryo-EM structure determination}
+{\textbf{Yang Yan}, Huaizong Shen}
+{Nature Methods Research Briefing, 23, 26--27, DOI: \href{https://doi.org/10.1038/s41592-025-02917-7}{10.1038/s41592-025-02917-7}.}
+{2026}
+
+\pub{CryoDECO: Deconstructing Extreme Compositional and Conformational Heterogeneity in Cryo-EM via Foundation Model Priors}
+{\textbf{Yang Yan}, Yanwanyu Xi, Shiqi Fan, Yifei Wang, Ziyun Tang, Fajie Yuan, Huaizong Shen}
+{LangTaoSha Preprint Server. DOI: \href{https://doi.org/10.65215/LTSpreprints.2025.12.30.000075}{10.65215/LTSpreprints.2025.12.30.000075}. SOTA foundation-prior model for heterogeneous cryo-EM reconstruction, advancing high-throughput panoramic structural biology.}
+{2026}
+
+\pub{Unsupervised cryo-EM images denoising and clustering based on deep convolutional autoencoder and k-means++}
+{D. Zhang, \textbf{Yang Yan}, Y. Huang, B. Liu, Q. Zheng, J. Zhang, N. Xia}
+{IEEE Transactions on Medical Imaging, 42(5), 1509--1521. Deep autoencoder and balanced K-means++ framework for cryo-EM denoising and clustering.}
+{2022}
+
+
+\pub{Machine learning for structure determination in single-particle cryo-electron microscopy: A systematic review}
+{J. G. Wu, \textbf{Yang Yan}, D. X. Zhang, B. W. Liu, Q. B. Zheng, X. L. Xie, S. Q. Liu, S. X. Ge, et al.}
+{IEEE Transactions on Neural Networks and Learning Systems, 33(2), 452--472. Review of ML methods for single-particle cryo-EM structure determination.}
+{2021}
+
+\pub{Selected earlier medical-imaging publications}
+{S. Li, B. Liu, S. Li, X. Zhu, \textbf{Yang Yan}, D. Zhang; D. Zhang, B. Liu, Y. Huang, \textbf{Yang Yan}, et al.}
+{Complex \& Intelligent Systems, 2022; Journal of Digital Imaging, 2023. Deep-learning and ordinal-regression methods for bone-age assessment.}
+{2022--2023}
+
+\newpage
+
+\section*{Research Highlights}
+\begin{itemize}
+  \item \textbf{First cryo-EM foundation model:} introduced \textbf{Cryo-IEF}, the first foundation model developed for cryo-EM particle processing, pretrained on \textbf{$\sim$65M particle images} and establishing a new paradigm for automated particle analysis in structural biology.
+  \item \textbf{First fully automated reconstruction pipeline:} developed \textbf{CryoWizard}, a fully automated computational pipeline for single-particle cryo-EM reconstruction that streamlines raw data processing, particle ranking, and high-resolution 3D structure determination without manual intervention.
+  \item \textbf{SOTA heterogeneous reconstruction:} developed \textbf{CryoDECO}, a state-of-the-art foundation-prior model for heterogeneous cryo-EM reconstruction; resolved \textbf{100-structure} simulated mixtures and advanced panoramic analysis of cellular machinery in native biological states.
+  \item \textbf{Open-source Python package for cryo-EM data processing:} developed \textbf{\texttt{cryodata}}, a PyPI-installable data layer that converts CryoSPARC particle jobs into PyTorch-ready datasets with MRC/MRCS preprocessing, FFT/Hartley representations, LMDB storage, balanced sampling, and CryoSPARC-to-RELION metadata conversion.
+\end{itemize}
+
+
+\section*{Research Software and Open Source}
+\projectentry{2023--2026}{Cryo-IEF: First Foundation Model for Cryo-EM Particle Processing}{https://github.com/westlake-repl/Cryo-IEF}{Designed and released the Cryo-IEF ecosystem, pretrained on $\sim$65M cryo-EM particle images. Built PyTorch inference and downstream tooling for CryoRanker and CryoClustering, enabling practical structural classification, pose clustering, and particle-quality assessment.}
+
+\projectentry{2024--2026}{CryoDECO: SOTA Heterogeneous Reconstruction with Foundation Model Priors}{https://github.com/yanyang1998/CryoDECO}{Developed a prior-guided heterogeneous reconstruction framework that uses Cryo-IEF representations to reduce random ab initio initialization and disentangle compositional classification from 3D reconstruction.} 
+% supporting high-throughput panoramic analysis of structural heterogeneity in native-like mixtures.}
+
+\projectentry{2024--2025}{CryoWizard: Fully Automated Single-Particle Cryo-EM Reconstruction Pipeline}{https://github.com/SMART-StructBio-AI/CryoWizard}{Built and extended an end-to-end computational pipeline integrating CryoRanker with CryoSPARC, streamlining raw movies, micrographs, or particles to high-resolution 3D volumes without manual intervention through command-line, web, and Chrome-extension interfaces.}
+
+\projectentry{2023--2026}{cryodata: Open-Source Python Package for Cryo-EM Data Processing}{https://github.com/SMART-StructBio-AI/cryoief-data}{Created the \textbf{reusable data layer} used by Cryo-IEF, CryoDECO, and CryoWizard to convert raw CryoSPARC particle outputs into PyTorch-ready training and inference datasets. The package supports MRC/MRCS preprocessing, LMDB-backed dataset creation, Fourier/Hartley feature generation, balanced sampling, PyTorch data loading, and CryoSPARC-to-RELION metadata conversion. Packaged and documented the toolkit for \textbf{\texttt{pip install cryodata}}, turning lab-specific preprocessing into reproducible open-source scientific ML infrastructure.}
+
+\section*{Technical Skills}
+\skillrow{ML / Vision}{Self-supervised learning, representation learning, foundation models, clustering, autoencoders, generative/reconstruction models, image denoising.}
+\skillrow{Structural Biology}{Single-particle cryo-EM, cryo-ET, CryoSPARC/RELION workflows, ChimeraX visualization, MRC/MRCS data formats.}
+\skillrow{Systems}{Multiprocessing data pipelines, parallel GPU training/inference.}
+
+
+\section*{Research Interests}
+My long-term research vision is to develop AI systems that understand molecular structure in its native, dynamic context. Building on the CryoDECO idea that foundation-model priors can break the circular dependency between classification and reconstruction, I am interested in next-generation structural world models that learn the latent laws of macromolecular identity, interaction, motion, and cellular context from large-scale cryo-EM/cryo-ET data. A central direction is adaptive manifold intelligence: models that infer the intrinsic degrees of freedom of a sample, choose appropriate latent capacity, and move beyond static structure determination toward continuous maps of biological state space. I am also interested in agent-based structural-biology systems that autonomously plan reconstruction strategies, diagnose failure modes, select data-processing actions, and connect imaging data with biochemical and multimodal biological evidence. The broader goal is panoramic structural biology: replacing single-target, purification-heavy workflows with AI-guided discovery of molecular machines, transient interactions, and conformational dynamics directly from complex native mixtures.
+
+
+\end{document}
