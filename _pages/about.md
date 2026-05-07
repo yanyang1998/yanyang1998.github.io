@@ -9,8 +9,8 @@ redirect_from:
 
 <section class="academic-hero">
   <p class="academic-kicker">AI for Science | Computer Vision | Representation Learning | Structural Biology</p>
-  <h1>Ph.D. candidate building foundation models for cryo-electron microscopy.</h1>
-  <p class="academic-lede">I develop AI systems and open-source tools that make cryo-EM particle processing, heterogeneity analysis, and structure determination more automated, scalable, and reproducible.</p>
+  <!-- <h1>Ph.D. candidate building foundation models for cryo-electron microscopy.</h1> -->
+  <!-- <p class="academic-lede">I develop AI systems and open-source tools that make cryo-EM particle processing, heterogeneity analysis, and structure determination more automated, scalable, and reproducible.</p> -->
   <p class="academic-actions">
     <a class="btn btn--primary" href="/files/cv_yang_yan.pdf">Download CV</a>
     <a class="btn" href="mailto:y.yan@zju.edu.cn">Email</a>
@@ -23,6 +23,8 @@ redirect_from:
 I am a Ph.D. candidate in Computer Science in a joint program at Zhejiang University and Westlake University, supervised by Prof. Fajie Yuan and Prof. Huaizong Shen. My research focuses on foundation models and practical machine-learning systems for single-particle cryo-EM, with an emphasis on representation learning, particle-quality ranking, clustering, and automated reconstruction.
 
 My recent work introduced **Cryo-IEF**, a foundation model for cryo-EM particle processing pretrained on approximately 65 million particle images and transferred to structural classification, pose-aware clustering, particle-quality ranking, and automated reconstruction. Current work extends this direction through **CryoDECO**, a foundation-prior framework for compositional and conformational heterogeneity.
+
+
 
 ## Education
 
