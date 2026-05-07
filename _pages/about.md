@@ -24,7 +24,13 @@ I am a Ph.D. candidate in Computer Science in a joint program at Zhejiang Univer
 
 My recent work introduced **Cryo-IEF**, a foundation model for cryo-EM particle processing pretrained on approximately 65 million particle images and transferred to structural classification, pose-aware clustering, particle-quality ranking, and automated reconstruction. Current work extends this direction through **CryoDECO**, a foundation-prior framework for compositional and conformational heterogeneity.
 
+## Research Vision
 
+My long-term research vision is to develop AI systems that understand molecular structure in its native, dynamic context. Building on the CryoDECO idea that foundation-model priors can break the circular dependency between classification and reconstruction, I am interested in next-generation structural world models that learn the latent laws of macromolecular identity, interaction, motion, and cellular context from large-scale cryo-EM/cryo-ET data.
+
+A central direction is **adaptive manifold intelligence**: models that infer the intrinsic degrees of freedom of a sample, choose appropriate latent capacity, and move beyond static structure determination toward continuous maps of biological state space. I am also interested in agent-based structural-biology systems that autonomously plan reconstruction strategies, diagnose failure modes, select data-processing actions, and connect imaging data with biochemical and multimodal biological evidence.
+
+The broader goal is **panoramic structural biology**: replacing single-target, purification-heavy workflows with AI-guided discovery of molecular machines, transient interactions, and conformational dynamics directly from complex native mixtures.
 
 ## Education
 
