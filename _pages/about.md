@@ -20,7 +20,9 @@ redirect_from:
 
 ## Research Profile
 
-I am a Ph.D. candidate in Computer Science in a joint program at Zhejiang University and Westlake University, supervised by Prof. Fajie Yuan and Prof. Huaizong Shen. My research focuses on foundation models and practical machine-learning systems for single-particle cryo-EM, with an emphasis on representation learning, particle-quality ranking, clustering, and automated reconstruction.
+<!-- I am a Ph.D. candidate in Computer Science in a joint program at Zhejiang University and Westlake University, supervised by Prof. Fajie Yuan and Prof. Huaizong Shen. My research focuses on foundation models and practical machine-learning systems for single-particle cryo-EM, with an emphasis on representation learning, particle-quality ranking, clustering, and automated reconstruction. -->
+I am a PhD candidate in computer science, jointly trained at Zhejiang University and Westlake University. My research lies at the intersection of AI for Science, computer vision, and structural biology, with a focus on building foundation models for cryo‑EM image analysis. I develop self‑supervised models, automated pipelines, and open‑source tools to enable high‑throughput, expert‑free structural biology.
+
 
 My recent work introduced **Cryo-IEF**, a foundation model for cryo-EM particle processing pretrained on approximately 65 million particle images and transferred to structural classification, pose-aware clustering, particle-quality ranking, and automated reconstruction. Current work extends this direction through **CryoDECO**, a foundation-prior framework for compositional and conformational heterogeneity.
 
@@ -90,7 +92,8 @@ The broader goal is **panoramic structural biology**: replacing single-target, p
     <p>Developed CryoDECO to combine foundation-model priors with ab initio reconstruction for complex compositional and conformational heterogeneity.</p>
   </article>
   <article>
-    <h3>Open Scientific ML Infrastructure</h3>
+    <!-- <h3>Open Scientific ML Infrastructure</h3> -->
+    <h3>Open-Source Python Package</h3>
     <p>Built cryodata, a reusable PyTorch-ready data layer for CryoSPARC particle outputs, MRC/MRCS preprocessing, LMDB datasets, and metadata conversion.</p>
   </article>
 </div>
