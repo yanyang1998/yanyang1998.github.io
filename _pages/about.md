@@ -9,7 +9,7 @@ redirect_from:
 
 <section class="academic-hero">
   <p class="academic-kicker">AI for Science | Computer Vision | Representation Learning | Structural Biology</p>
-  <h1>Building AI systems that help reveal molecular structure from cryo-EM data.</h1>
+  <!-- <h1>Building AI systems that help reveal molecular structure from cryo-EM data.</h1> -->
   <p class="academic-lede">I develop foundation models, automated workflows, and open-source tools that help structural biologists recover 3D molecular structures from noisy cryo-EM images, making high-resolution biological discovery more scalable, reproducible, and accessible.</p>
   <p class="academic-actions">
     <a class="btn btn--primary" href="/files/cv_yang_yan.pdf">Download CV</a>
