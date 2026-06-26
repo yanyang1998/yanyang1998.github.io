@@ -6,7 +6,7 @@
   h1 {
     max-width: 52rem;
     margin-bottom: 0.5rem;
-    font-size: $type-size-2;
+    font-size: $type-size-3;
     line-height: 1.12;
   }
 }
@@ -131,7 +131,7 @@
 
 @include breakpoint(max-width $small) {
   .academic-hero h1 {
-    font-size: $type-size-3;
+    font-size: $type-size-4;
   }
 
   .academic-lede {
