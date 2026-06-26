@@ -9,8 +9,8 @@ redirect_from:
 
 <section class="academic-hero">
   <p class="academic-kicker">AI for Science | Computer Vision | Representation Learning | Structural Biology</p>
-  <!-- <h1>Ph.D. candidate building foundation models for cryo-electron microscopy.</h1> -->
-  <!-- <p class="academic-lede">I develop AI systems and open-source tools that make cryo-EM particle processing, heterogeneity analysis, and structure determination more automated, scalable, and reproducible.</p> -->
+  <h1>Building AI systems that help reveal molecular structure from cryo-EM data.</h1>
+  <p class="academic-lede">I develop foundation models, automated workflows, and open-source tools that help structural biologists recover 3D molecular structures from noisy cryo-EM images, making high-resolution biological discovery more scalable, reproducible, and accessible.</p>
   <p class="academic-actions">
     <a class="btn btn--primary" href="/files/cv_yang_yan.pdf">Download CV</a>
     <a class="btn" href="mailto:y.yan@zju.edu.cn">Email</a>
@@ -20,19 +20,21 @@ redirect_from:
 
 ## Research Profile
 
-<!-- I am a Ph.D. candidate in Computer Science in a joint program at Zhejiang University and Westlake University, supervised by Prof. Fajie Yuan and Prof. Huaizong Shen. My research focuses on foundation models and practical machine-learning systems for single-particle cryo-EM, with an emphasis on representation learning, particle-quality ranking, clustering, and automated reconstruction. -->
-I am a PhD candidate in computer science, jointly trained at Zhejiang University and Westlake University. My research lies at the intersection of AI for Science, computer vision, and structural biology, with a focus on building foundation models for cryo‑EM image analysis. I develop self‑supervised models, automated pipelines, and open‑source tools to enable high‑throughput, expert‑free structural biology.
+Structural biology seeks to understand life at the molecular level: how proteins, complexes, and molecular machines are shaped, how they move, and how their structures explain biological function, interactions, and disease mechanisms. Cryo-electron microscopy (cryo-EM) has become one of the central technologies for this goal because it can image biomolecules close to their native states and support high-resolution 3D structure determination.
 
+The computational challenge is that cryo-EM data are not direct 3D structures. A typical experiment produces large collections of extremely noisy 2D particle images. The same molecule may appear in many orientations, adopt multiple conformations, or coexist with other molecular species. Turning these data into reliable structural insight often requires expert decisions across particle selection, classification, heterogeneity analysis, and reconstruction.
 
-My recent work introduced **Cryo-IEF**, a foundation model for cryo-EM particle processing pretrained on approximately 65 million particle images and transferred to structural classification, pose-aware clustering, particle-quality ranking, and automated reconstruction. Current work extends this direction through **CryoDECO**, a foundation-prior framework for compositional and conformational heterogeneity.
+I am a PhD candidate in computer science, jointly trained at Zhejiang University and Westlake University. My research uses self-supervised learning and foundation models to learn transferable representations of cryo-EM particles. These representations support particle-quality ranking, structural classification, pose clustering, heterogeneity analysis, and automated reconstruction.
+
+My recent work introduced **Cryo-IEF**, a foundation model for cryo-EM particle processing pretrained on approximately 65 million particle images. This direction is extended by **CryoDECO**, which uses foundation-model priors to analyze compositional and conformational heterogeneity. I also build practical software systems, including **CryoWizard** and **cryodata**, that turn these models into reusable tools for cryo-EM workflows.
 
 ## Research Vision
 
-My long-term research vision is to develop AI systems that understand molecular structure in its native, dynamic context. Building on the CryoDECO idea that foundation-model priors can break the circular dependency between classification and reconstruction, I am interested in next-generation structural world models that learn the latent laws of macromolecular identity, interaction, motion, and cellular context from large-scale cryo-EM/cryo-ET data.
+My long-term goal is to build AI systems that make structural biology more automated, data-driven, and capable of resolving molecular structures and dynamics in native-like contexts. Rather than treating structure determination as a sequence of isolated manual steps, I am interested in models that can learn from large-scale cryo-EM and cryo-ET data, transfer across datasets, and assist scientists in reasoning about molecular state.
 
-A central direction is **adaptive manifold intelligence**: models that infer the intrinsic degrees of freedom of a sample, choose appropriate latent capacity, and move beyond static structure determination toward continuous maps of biological state space. I am also interested in agent-based structural-biology systems that autonomously plan reconstruction strategies, diagnose failure modes, select data-processing actions, and connect imaging data with biochemical and multimodal biological evidence.
+Building on the CryoDECO idea that foundation-model priors can reduce the circular dependency between classification and reconstruction, I am interested in **adaptive manifold intelligence**: models that infer the intrinsic degrees of freedom of a sample, choose appropriate latent capacity, and move beyond static structure determination toward continuous maps of biological state space. I am also interested in agent-based structural-biology systems that plan reconstruction strategies, diagnose failure modes, select data-processing actions, and connect imaging data with biochemical and multimodal biological evidence.
 
-The broader goal is **panoramic structural biology**: replacing single-target, purification-heavy workflows with AI-guided discovery of molecular machines, transient interactions, and conformational dynamics directly from complex native mixtures.
+The broader goal is **panoramic structural biology**: moving from single purified targets toward AI-guided discovery of molecular machines, transient interactions, and conformational dynamics directly from complex native mixtures.
 
 ## Education
 
@@ -81,20 +83,19 @@ The broader goal is **panoramic structural biology**: replacing single-target, p
 <div class="academic-card-grid">
   <article>
     <h3>Cryo-EM Foundation Models</h3>
-    <p>Introduced Cryo-IEF as a foundation-model paradigm for automated cryo-EM particle analysis.</p>
+    <p>Introduced Cryo-IEF to learn transferable representations from large-scale, noisy cryo-EM particles, providing a foundation for downstream structural analysis.</p>
   </article>
   <article>
     <h3>Automated Reconstruction</h3>
-    <p>Developed CryoWizard, a fully automated computational pipeline for single-particle cryo-EM reconstruction.</p>
+    <p>Developed CryoWizard to reduce expert intervention in single-particle cryo-EM workflows and make structure determination more reproducible.</p>
   </article>
   <article>
     <h3>Heterogeneous Reconstruction</h3>
-    <p>Developed CryoDECO to combine foundation-model priors with ab initio reconstruction for complex compositional and conformational heterogeneity.</p>
+    <p>Developed CryoDECO for samples that are not a single static structure, using foundation-model priors to resolve compositional and conformational heterogeneity.</p>
   </article>
   <article>
-    <!-- <h3>Open Scientific ML Infrastructure</h3> -->
     <h3>Open-Source Python Package</h3>
-    <p>Built cryodata, a reusable PyTorch-ready data layer for CryoSPARC particle outputs, MRC/MRCS preprocessing, LMDB datasets, and metadata conversion.</p>
+    <p>Built cryodata as reusable infrastructure that brings cryo-EM particle data into PyTorch-ready workflows for training, inference, and reproducible analysis.</p>
   </article>
 </div>
 
@@ -103,19 +104,19 @@ The broader goal is **panoramic structural biology**: replacing single-target, p
 <div class="academic-projects">
   <article>
     <h3><a href="https://github.com/westlake-repl/Cryo-IEF">Cryo-IEF</a></h3>
-    <p>Foundation model ecosystem for cryo-EM particle processing, including downstream tooling for CryoRanker and CryoClustering.</p>
+    <p>Addresses the difficulty of interpreting noisy cryo-EM particles by learning general-purpose representations for quality assessment, classification, clustering, and reconstruction workflows.</p>
   </article>
   <article>
     <h3><a href="https://github.com/yanyang1998/CryoDECO">CryoDECO</a></h3>
-    <p>Foundation-prior framework for heterogeneous cryo-EM reconstruction and compositional/conformational deconstruction.</p>
+    <p>Tackles structural heterogeneity by using Cryo-IEF priors to guide ab initio reconstruction and separate compositional or conformational states.</p>
   </article>
   <article>
     <h3><a href="https://github.com/SMART-StructBio-AI/cryoief-data">cryodata</a></h3>
-    <p>Open-source data-processing package that turns CryoSPARC particle jobs into reproducible PyTorch-ready datasets.</p>
+    <p>Provides the data infrastructure needed to move cryoSPARC particle jobs, MRC/MRCS stacks, and metadata into reproducible PyTorch-ready datasets.</p>
   </article>
   <article>
     <h3><a href="https://github.com/SMART-StructBio-AI/CryoWizard">CryoWizard</a></h3>
-    <p>End-to-end automated single-particle cryo-EM reconstruction pipeline integrating particle ranking and CryoSPARC workflows.</p>
+    <p>Automates expert-heavy cryo-EM processing by integrating particle ranking and CryoSPARC workflows into an end-to-end reconstruction pipeline.</p>
   </article>
 </div>
 

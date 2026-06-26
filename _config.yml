@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Yang Yan"
 title_separator          : "-"
 name                     : &name "Yang Yan"
-description              : &description "Ph.D. candidate developing AI foundation models and open-source systems for cryo-electron microscopy."   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Ph.D. candidate developing AI foundation models and open-source systems that help reveal molecular structures from cryo-EM data."   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://yanyang1998.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -26,7 +26,7 @@ author:
   avatar           : "profile_photo.png"
   name             : "Yang Yan"
   pronouns         : # example: "she/her"  
-  bio              : "Ph.D. candidate in AI for science, computer vision, representation learning, and structural biology."
+  bio              : "Ph.D. candidate building AI systems for cryo-EM, structural biology, and scientific discovery."
   location         : "Hangzhou, China"
   employer         : "Zhejiang University / Westlake University"
   uri              : # URL
